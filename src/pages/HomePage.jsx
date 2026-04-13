@@ -4,27 +4,29 @@ import FeatureCard from "../components/FeatureCard";
 const HomePage = () => {
   const features = [
     {
-      title: "소개",
-      description: "제 소개입니다.",
+      title: "소개 (About Me)",
+      description: "동국대 정보통신공학도 박준서의 비전과 목표를 소개합니다.",
     },
     {
-      title: "프로젝트",
-      description: "제가 만든 프로젝트들 입니다.",
+      title: "프로젝트 (Projects)",
+      description: "데이터 분석 및 개발을 통해 문제를 해결한 프로젝트입니다.",
     },
     {
-      title: "연락처",
-      description: "저에게 연락하는 방법입니다.",
+      title: "연락처 (Contact)",
+      description: "협업 제안이나 문의 사항은 언제든 환영합니다.",
     },
+    /* 과제 수정 포인트: 단순 안내에서 직무 역량 강조 항목으로 변경 */
     {
-      title: "여러분이 원하는",
-      description: "항목을 새로 만들어 보세요.",
+      title: "데이터 분석 & DX",
+      description: "Python과 SQL을 활용한 데이터 기반 솔루션을 탐색합니다.",
     },
   ];
 
   return (
     <div className="home-container">
-      <h2>환영합니다!</h2>
-      <p>이 웹사이트는 React를 사용하여 만든 개인 포트폴리오입니다.</p>
+      {/* 과제 수정 포인트: 환영 인사를 사용자 맞춤형으로 변경 */}
+      <h2>안녕하세요, 박준서의 포트폴리오입니다.</h2>
+      <p>정보통신공학 전공을 기반으로 데이터 분석가(Data Analyst)를 꿈꾸는 3학년 박준서입니다.</p>
       <div className="features">
         {features.map((feature, index) => (
           <FeatureCard
